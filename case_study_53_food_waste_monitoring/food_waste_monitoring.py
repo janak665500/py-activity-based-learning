@@ -132,3 +132,4 @@ if __name__ == "__main__":
     ]
     
     analyze_food_waste(dining_hall_data, acceptable_threshold=10.0, meal_unit_cost=65.0)
+

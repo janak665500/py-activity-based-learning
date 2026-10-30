@@ -205,3 +205,4 @@ ACTIONABLE RECOVERY DIRECTIVES:
 1. **Dynamic Denominator Effect**: The algorithm clearly demonstrates that attendance recovery is non-linear; recovering a 5% deficit requires significantly more classes when the total number of classes held is already large.
 2. **Computational Thinking**: Solving the problem via an iterative `while` simulation provides exact integer answers without relying on complex floating-point algebra that can be susceptible to round-off errors.
 3. **Syllabus Mastery**: Implemented strictly utilizing loops, conditionals, tuples, and formatted strings without external math libraries.
+

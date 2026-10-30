@@ -160,3 +160,4 @@ if __name__ == "__main__":
     ]
     
     analyze_electricity_matrix(appliance_names, days_of_week, weekly_matrix, daily_limit=24.0, appliance_limit=35.0)
+

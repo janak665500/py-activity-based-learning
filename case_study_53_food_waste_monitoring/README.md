@@ -199,3 +199,4 @@ OPERATIONAL RECOMMENDATIONS:
 1. **Behavioral Pattern Recognition**: The audit identified that severe wastage occurs predictably on Fridays (16.84%) and Sundays (17.33%) as residential students travel home or dine off-campus.
 2. **Shrinkage Accountability**: Formulating discrepancy checks uncovered 25 unaccounted meals, identifying potential inventory slippage or unrecorded kitchen damage.
 3. **Financial Quantification**: Translating physical leftover quantities into direct fiscal losses (INR 40,950.00) delivers executive clarity for institutional decision makers.
+

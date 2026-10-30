@@ -210,3 +210,4 @@ ESTIMATED TARIFF & BILLING BREAKDOWN:
 1. **Weekend Load Profile Detection**: Column-wise analysis revealed significant weekend energy surges (Saturday 27.5 kWh and Sunday 28.4 kWh), driven primarily by prolonged air conditioning.
 2. **Appliance Attribution**: By isolating appliance consumption, the audit clearly proved that the Air Conditioner accounted for 41.2% of total household consumption.
 3. **Utility Billing Automation**: Integrated progressive tariff calculation demonstrates computational financial modeling using pure conditionals and arithmetic expressions.
+

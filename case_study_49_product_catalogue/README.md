@@ -207,3 +207,4 @@ Total Reorder Capital Required   : INR 662,966.00
 1. **Tuple Security & Immutability**: Encapsulating inventory state inside tuples guarantees that operational functions cannot unintentionally mutate master records.
 2. **Defensive Programming**: Validating and quarantining defective tuples prevents runtime errors and corrupted financial reporting.
 3. **Automated Procurement Intelligence**: Calculates exact reorder quantities and estimates required purchase capital, connecting programming to business supply chain operations.
+

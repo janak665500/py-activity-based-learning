@@ -196,3 +196,4 @@ characters, run counts cause payload duplication and expansion penalty (approx -
 1. **Mathematical Heuristic**: Run-Length Encoding is only beneficial when the average run length exceeds 2. For strings with run length 1 (unique characters), encoding adds an integer digit for every character, causing a catastrophic 100% expansion.
 2. **Lossless Verification**: Integrating a decompressor directly into the test suite guarantees that no data corruption occurs during compression.
 3. **Engine Robustness**: Handling edge cases (empty strings, single repeated letters, natural language text) ensures real-world production reliability.
+
