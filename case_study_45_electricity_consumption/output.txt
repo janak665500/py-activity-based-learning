@@ -1,0 +1,34 @@
+﻿========================================================================================
+                     HOUSEHOLD WEEKLY ELECTRICITY CONSUMPTION AUDIT                     
+========================================================================================
+Audit Horizon           : 7 Full Operating Days (Mon to Sun)
+Daily Safety Limit      : 24.0 kWh / day
+Weekly Appliance Quota  : 35.0 kWh / week
+
+#   Appliance                      Mon     Tue     Wed     Thu     Fri     Sat     Sun     Total   Avg/Day  Audit Status
+------------------------------------------------------------------------------------------------------------------------
+1   Air Conditioner (2.0 TR)       7.5     8.0     7.8     8.2     9.0    11.5    12.0      64.0       9.1  QUOTA EXCEEDED [ALERT]
+2   Refrigerator (Double Door)     2.2     2.1     2.3     2.2     2.4     2.5     2.4      16.1       2.3  Within Quota
+3   Geyser / Water Heater          4.0     3.8     4.2     3.9     4.1     4.5     4.8      29.3       4.2  Within Quota
+4   Washing Machine                0.0     1.5     0.0     1.6     0.0     2.2     2.0       7.3       1.0  Within Quota
+5   Lighting & Ceiling Fans        3.0     3.2     3.1     3.0     3.5     4.0     4.2      24.0       3.4  Within Quota
+6   Microwave & Induction          1.8     1.5     1.9     1.6     2.0     2.8     3.0      14.6       2.1  Within Quota
+------------------------------------------------------------------------------------------------------------------------
+    DAILY TOTAL (kWh)             18.5    20.1    19.3    20.5    21.0    27.5    28.4     155.3      22.2
+------------------------------------------------------------------------------------------------------------------------
+
+SURGE & PEAK LOAD ANALYSIS:
+[*] Peak Single Consumption Event : 12.00 kWh by 'Air Conditioner (2.0 TR)' on Sun.
+
+DAILY HOUSEHOLD LIMIT AUDIT (> 24.0 kWh):
+[!] Sat: Total 27.5 kWh exceeded safety threshold by +3.5 kWh.
+[!] Sun: Total 28.4 kWh exceeded safety threshold by +4.4 kWh.
+
+APPLIANCE QUOTA BREACH AUDIT (> 35.0 kWh/week):
+[!] 'Air Conditioner (2.0 TR)': Used 64.0 kWh, exceeding assigned quota by +29.0 kWh.
+
+ESTIMATED TARIFF & BILLING BREAKDOWN:
+- Cumulative Energy Consumed : 155.30 kWh
+- Energy Charges (Slab rate) : INR 839.75
+- Grid Fixed Maintenance Fee : INR 65.00
+- Estimated Net Weekly Bill  : INR 904.75

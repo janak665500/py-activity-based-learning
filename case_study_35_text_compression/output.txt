@@ -1,0 +1,25 @@
+﻿================================================================================
+                RUN-LENGTH CHARACTER COMPRESSION AUDIT BENCHMARK                
+================================================================================
+Total Test Payloads Ingested: 9
+
+#    Original Sample          Encoded Output           Orig Len Enc Len  Savings %    Recommendation         Integrity 
+--------------------------------------------------------------------------------------------------------------------
+1    WWWWWWWWWWWWBWWWWWW...   W12B1W12B3W12            40       13       +67.50%      BENEFICIAL (Compress)  PASS [OK] 
+2    AAAAAAAGGGGGTTTTTTT...   A7G5T7C7A5               31       10       +67.74%      BENEFICIAL (Compress)  PASS [OK] 
+3    AABBBCCCCDDDDDEEEEE...   A2B3C4D5E6F6G7           33       14       +57.58%      BENEFICIAL (Compress)  PASS [OK] 
+4    ABCDEFGHIJKLMN           A1B1C1D1E1F1G1H1I1J...   14       28       -100.00%     INEFFECTIVE (Reject / Store Raw) PASS [OK] 
+5    ABABABABABABAB           A1B1A1B1A1B1A1B1A1B...   14       28       -100.00%     INEFFECTIVE (Reject / Store Raw) PASS [OK] 
+6    ZZZZZZZZZZZZZZZZZZZZ     Z20                      20       3        +85.00%      BENEFICIAL (Compress)  PASS [OK] 
+7    Hellooooo Worlddd        H1e1l2o5 1W1o1r1l1d3     17       20       -17.65%      INEFFECTIVE (Reject / Store Raw) PASS [OK] 
+8    MISSISSIPPI              M1I1S2I1S2I1P2I1         11       16       -45.45%      INEFFECTIVE (Reject / Store Raw) PASS [OK] 
+9                                                      0        0         +0.00%      EMPTY INPUT            PASS [OK] 
+--------------------------------------------------------------------------------------------------------------------
+
+ANALYTICAL SUMMARY & ENGINE HEURISTICS:
+Total Sequences Processed   : 9
+Beneficial Compressions     : 4
+Ineffective (Expansion) Cases: 4
+Core Finding: Run-Length Encoding demonstrates optimal performance when
+average consecutive character frequency exceeds 2. When text has non-repeating
+characters, run counts cause payload duplication and expansion penalty (approx -100%).

@@ -1,0 +1,41 @@
+﻿=====================================================================================
+               FINANCIAL TRANSACTION INTEGRITY & DUPLICATE AUDIT REPORT              
+=====================================================================================
+Total Transactions Ingested    : 8
+Single Transaction Threshold   : INR 50,000.00
+Cumulative Sender Limit        : INR 100,000.00
+
+INGESTED TRANSACTION LEDGER:
+#     Txn ID     Sender         Receiver         Amount (INR) Timestamp      
+--------------------------------------------------------------------------------
+1     TX1001     ACC_SHUKUR     ACC_RAVI            15,000.00 2026-10-30 09:15
+2     TX1002     ACC_PRIYA      ACC_ANANYA           8,500.00 2026-10-30 09:30
+3     TX1003     ACC_KIRAN      ACC_VISHAL          65,000.00 2026-10-30 09:45
+4     TX1004     ACC_PRIYA      ACC_ANANYA           8,500.00 2026-10-30 10:00
+5     TX1005     ACC_AMAR       ACC_SUNIL           45,000.00 2026-10-30 10:15
+6     TX1005     ACC_AMAR       ACC_SUNIL           45,000.00 2026-10-30 10:16
+7     TX1007     ACC_AMAR       ACC_DEEPAK          35,000.00 2026-10-30 10:45
+8     TX1008     ACC_SHUKUR     ACC_ROHAN            5,000.00 2026-10-30 11:00
+--------------------------------------------------------------------------------
+
+SUSPICIOUS ENTRIES & THRESHOLD VIOLATIONS DETECTED:
+Txn ID     Sender       Receiver       Amount (INR) Risk       Violation Description                   
+---------------------------------------------------------------------------------------------------------
+TX1004     ACC_PRIYA    ACC_ANANYA         8,500.00 HIGH       Duplicate Transfer: Replay match with TX1002 (Amt: INR 8,500.00)
+TX1003     ACC_KIRAN    ACC_VISHAL        65,000.00 HIGH       Exceeds Single Txn Limit (INR 50,000.00)
+TX1005     ACC_AMAR     ACC_SUNIL         45,000.00 CRITICAL   Duplicate Txn ID collision with index #5
+TX1005     ACC_AMAR     ACC_SUNIL         45,000.00 MEDIUM     Cumulative Sender Limit Exceeded (Total: INR 125,000.00)
+TX1005     ACC_AMAR     ACC_SUNIL         45,000.00 MEDIUM     Cumulative Sender Limit Exceeded (Total: INR 125,000.00)
+TX1007     ACC_AMAR     ACC_DEEPAK        35,000.00 MEDIUM     Cumulative Sender Limit Exceeded (Total: INR 125,000.00)
+---------------------------------------------------------------------------------------------------------
+Total Flagged Anomaly Count : 6
+Total Value Under Review    : INR 243,500.00
+
+SENDER CUMULATIVE EXPOSURE SUMMARY:
+Sender Account     Txn Count       Total Outflow (INR) Velocity Status
+------------------------------------------------------------------------
+ACC_SHUKUR         2                        20,000.00 NORMAL         
+ACC_PRIYA          2                        17,000.00 NORMAL         
+ACC_KIRAN          1                        65,000.00 NORMAL         
+ACC_AMAR           3                       125,000.00 BREACH (>100k) 
+------------------------------------------------------------------------

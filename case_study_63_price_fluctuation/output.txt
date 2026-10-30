@@ -1,0 +1,45 @@
+﻿========================================================================================
+                   COMMODITY PRICE TRAJECTORY & VOLATILITY RISK AUDIT                   
+========================================================================================
+Observation Horizon : 6 Time Intervals (Jan to Jun)
+Volatility Alert Threshold: Max Period Fluctuation > 15.0%
+
+ID      Product Name                Jan      Feb      Mar      Apr      May      Jun
+------------------------------------------------------------------------------------
+CMD01   Basmati Rice (5kg)       450.00   455.00   460.00   458.00   465.00   470.00
+CMD02   Refined Sunflower Oil 1L   135.00   142.00   168.00   175.00   195.00   180.00
+CMD03   Fresh Tomatoes (kg)       25.00    32.00    55.00    85.00    40.00    30.00
+CMD04   Granulated Sugar (kg)     42.00    43.00    43.50    44.00    44.50    45.00
+CMD05   Wheat Flour (Atta 10kg)   380.00   390.00   395.00   400.00   410.00   415.00
+CMD06   Whole Red Onions (kg)     30.00    35.00    50.00    70.00    45.00    35.00
+------------------------------------------------------------------------------------
+
+SECTION 2: PERIOD-OVER-PERIOD FLUCTUATION & RISK AUDIT
+ID      Product Name              Min P      Max P  Max Fluct %  Range Vol %  Net Shift % Risk Status       
+--------------------------------------------------------------------------------------------------------------
+CMD01   Basmati Rice (5kg)       450.00     470.00       +1.53%        4.44%       +4.44% HIGHLY STABLE     
+CMD02   Refined Sunflower Oil 1L     135.00     195.00      +18.31%       44.44%      +33.33% VOLATILE [FLAGGED]
+CMD03   Fresh Tomatoes (kg)       25.00      85.00      +71.88%      240.00%      +20.00% VOLATILE [FLAGGED]
+CMD04   Granulated Sugar (kg)      42.00      45.00       +2.38%        7.14%       +7.14% HIGHLY STABLE     
+CMD05   Wheat Flour (Atta 10kg)     380.00     415.00       +2.63%        9.21%       +9.21% HIGHLY STABLE     
+CMD06   Whole Red Onions (kg)      30.00      70.00      +42.86%      133.33%      +16.67% VOLATILE [FLAGGED]
+--------------------------------------------------------------------------------------------------------------
+
+SECTION 3: COMMODITY RISK RANKING (MOST VOLATILE TO MOST STABLE):
+Rank #1: Fresh Tomatoes (kg)    | Max Single Shift: +71.88% | Range Volatility: 240.00% [VOLATILE [FLAGGED]]
+Rank #2: Whole Red Onions (kg)  | Max Single Shift: +42.86% | Range Volatility: 133.33% [VOLATILE [FLAGGED]]
+Rank #3: Refined Sunflower Oil 1L | Max Single Shift: +18.31% | Range Volatility:  44.44% [VOLATILE [FLAGGED]]
+Rank #4: Wheat Flour (Atta 10kg) | Max Single Shift:  +2.63% | Range Volatility:   9.21% [HIGHLY STABLE]
+Rank #5: Granulated Sugar (kg)  | Max Single Shift:  +2.38% | Range Volatility:   7.14% [HIGHLY STABLE]
+Rank #6: Basmati Rice (5kg)     | Max Single Shift:  +1.53% | Range Volatility:   4.44% [HIGHLY STABLE]
+
+SECTION 4: THRESHOLD BREACH AUDIT (Max Fluctuation > 15.0%):
+[ALERT] Refined Sunflower Oil 1L (CMD02): Suffered extreme swing of +18.31% in a single period!
+        Peak-to-Trough spread is 44.44%, with net trajectory +33.33%.
+        Directives: Review vendor supply contracts and implement dynamic hedging.
+[ALERT] Fresh Tomatoes (kg) (CMD03): Suffered extreme swing of +71.88% in a single period!
+        Peak-to-Trough spread is 240.00%, with net trajectory +20.00%.
+        Directives: Review vendor supply contracts and implement dynamic hedging.
+[ALERT] Whole Red Onions (kg) (CMD06): Suffered extreme swing of +42.86% in a single period!
+        Peak-to-Trough spread is 133.33%, with net trajectory +16.67%.
+        Directives: Review vendor supply contracts and implement dynamic hedging.

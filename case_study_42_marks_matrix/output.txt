@@ -1,0 +1,36 @@
+﻿========================================================================================
+                         ACADEMIC PERFORMANCE MATRIX EVALUATION                         
+========================================================================================
+Cohort Size: 7 Students | Curricular Subjects: 5
+Institutional Quality Benchmark Subject Average: 65.0%
+
+SECTION 1: STUDENT SCORECARD MATRIX (ROW-WISE ANALYSIS)
+Rank  Student Name      Mathematic  Python Pro  Data Struc  Comp. Org.  Discrete M    Total    Pct %  Grade
+-----------------------------------------------------------------------------------------------------------
+#1    Shukur                    94          98          92          88          85      457   91.40%  O  (Outstanding)
+#2    Farhan Ali                88          92          86          84          68      418   83.60%  A+ (Excellent)
+#3    Bhavya Sri                85          90          82          79          72      408   81.60%  A+ (Excellent)
+#4    Divya Reddy               78          84          75          72          60      369   73.80%  A  (Very Good)
+#5    Aarav Kumar               68          74          58          62          42      304   60.80%  B  (Good)
+#6    Eshwar Rao                52          60          45          50          38      245   49.00%  F  (Fail)
+#7    Charan Teja               42          55          38          48          30      213   42.60%  F  (Fail)
+-----------------------------------------------------------------------------------------------------------
+
+SECTION 2: CURRICULAR SUBJECT DIAGNOSTICS (COLUMN-WISE ANALYSIS)
+Subject Name               Avg Mark    Highest     Lowest  Pass Rate % Curricular Status   
+--------------------------------------------------------------------------------------------
+Mathematics                   72.43         94         42       100.0% HEALTHY (Satisfactory)
+Python Prog                   79.00         98         55       100.0% HEALTHY (Satisfactory)
+Data Structures               68.00         92         38        85.7% HEALTHY (Satisfactory)
+Comp. Org.                    69.00         88         48       100.0% HEALTHY (Satisfactory)
+Discrete Math                 56.43         85         30        71.4% LOW PERFORMANCE [ALERT]
+--------------------------------------------------------------------------------------------
+
+SECTION 3: ACADEMIC MERIT PODIUM (TOP PERFORMERS)
+[*] GOLD MEDALIST (Rank 1)    : Shukur - Total: 457/500 (91.40%) [O  (Outstanding)]
+[*] SILVER MEDALIST (Rank 2)  : Farhan Ali - Total: 418/500 (83.60%) [A+ (Excellent)]
+[*] BRONZE MEDALIST (Rank 3)  : Bhavya Sri - Total: 408/500 (81.60%) [A+ (Excellent)]
+
+SECTION 4: INSTITUTIONAL REMEDIAL ACTION ALERTS:
+[!] 'Discrete Math' class average of 56.43% (Pass rate: 71.4%) is BELOW the 65.0% threshold.
+    Recommendation: Conduct remedial tutorials, revise foundational topics, and hold doubt-clearing clinics.

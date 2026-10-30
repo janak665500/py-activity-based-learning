@@ -1,0 +1,68 @@
+﻿================================================================================
+                  STUDENT COURSE EVALUATION SENTIMENT ANALYSIS                  
+================================================================================
+Positive Keywords Monitored (13) : excellent, good, great, helpful, clear, inspiring...
+Negative Keywords Monitored (13) : poor, bad, confusing, boring, difficult, unclear...
+
+DETAILED FEEDBACK SENTIMENT BREAKDOWN:
+------------------------------------------------------------------------------------------
+Feedback #FB-01 by Shukur:
+  Comment  : "The Python lectures were excellent, very clear, and extremely engaging!"
+  Tokens   : 10 words | Positive matches: 3 ['excellent', 'clear', 'engaging'] | Negative: 0 []
+  Scoring  : Net = +3 | Normalized Index = +1.00
+  Outcome  : >>> HIGHLY POSITIVE <<<
+------------------------------------------------------------------------------------------
+Feedback #FB-02 by Aarav:
+  Comment  : "The explanation was confusing and the pace was too fast and disorganized."
+  Tokens   : 12 words | Positive matches: 0 [] | Negative: 3 ['confusing', 'fast', 'disorganized']
+  Scoring  : Net = -3 | Normalized Index = -1.00
+  Outcome  : >>> HIGHLY NEGATIVE <<<
+------------------------------------------------------------------------------------------
+Feedback #FB-03 by Bhavya:
+  Comment  : "Instructor is good and helpful, but some problem statements are difficult."
+  Tokens   : 11 words | Positive matches: 2 ['good', 'helpful'] | Negative: 1 ['difficult']
+  Scoring  : Net = +1 | Normalized Index = +0.33
+  Outcome  : >>> POSITIVE <<<
+------------------------------------------------------------------------------------------
+Feedback #FB-04 by Charan:
+  Comment  : "Today's lab was well structured, interactive, and very supportive."
+  Tokens   : 10 words | Positive matches: 3 ['well', 'interactive', 'supportive'] | Negative: 0 []
+  Scoring  : Net = +3 | Normalized Index = +1.00
+  Outcome  : >>> HIGHLY POSITIVE <<<
+------------------------------------------------------------------------------------------
+Feedback #FB-05 by Divya:
+  Comment  : "The classroom audio was poor and the explanations were unclear and rushed."
+  Tokens   : 12 words | Positive matches: 0 [] | Negative: 3 ['poor', 'unclear', 'rushed']
+  Scoring  : Net = -3 | Normalized Index = -1.00
+  Outcome  : >>> HIGHLY NEGATIVE <<<
+------------------------------------------------------------------------------------------
+Feedback #FB-06 by Eshwar:
+  Comment  : "Submitted the assignment in room 302 on Friday afternoon."
+  Tokens   : 9 words | Positive matches: 0 [] | Negative: 0 []
+  Scoring  : Net = +0 | Normalized Index = +0.00
+  Outcome  : >>> NEUTRAL (No Keywords) <<<
+------------------------------------------------------------------------------------------
+Feedback #FB-07 by Farhan:
+  Comment  : "Great examples and inspiring teaching, thoroughly enjoyed the session!"
+  Tokens   : 9 words | Positive matches: 2 ['great', 'inspiring'] | Negative: 0 []
+  Scoring  : Net = +2 | Normalized Index = +1.00
+  Outcome  : >>> HIGHLY POSITIVE <<<
+------------------------------------------------------------------------------------------
+================================================================================
+                      CONSOLIDATED SENTIMENT AUDIT SUMMARY                      
+================================================================================
+Sentiment Classification   Feedback Count  Percentage     
+------------------------------------------------------------
+HIGHLY POSITIVE            3               42.9          %
+POSITIVE                   1               14.3          %
+MIXED / BALANCED           0               0.0           %
+NEUTRAL (No Keywords)      1               14.3          %
+NEGATIVE                   0               0.0           %
+HIGHLY NEGATIVE            2               28.6          %
+------------------------------------------------------------
+
+Net Course Approval Rating: 57.1% Positive Sentiment
+
+TOP OBSERVED THEMATIC KEYWORDS:
+Most Frequent Positive Themes: excellent (1), good (1), great (1), helpful (1), clear (1), inspiring (1), engaging (1), interactive (1), supportive (1), well (1)
+Most Frequent Areas of Concern: poor (1), confusing (1), difficult (1), unclear (1), fast (1), disorganized (1), rushed (1)

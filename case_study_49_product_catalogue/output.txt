@@ -1,0 +1,46 @@
+﻿========================================================================================
+                ENTERPRISE PRODUCT CATALOGUE INTEGRITY & INVENTORY AUDIT                
+========================================================================================
+Total Catalogue Records Ingested: 11
+
+SECTION 1: CATALOGUE SANITY & INTEGRITY VALIDATION
+[!] Detected 3 corrupt/invalid records. Quarantined for review:
+    - Quarantined: ('PRD109', 'Defective Pricing Item', 'Hardware', -450.0, 10, 5) --> REASON: Invalid unit price (-450.0): Must be positive numeric
+    - Quarantined: ('PRD110', '', 'Accessories', 800.0, 15, 5) --> REASON: Invalid or missing Product Name
+    - Quarantined: ('PRD111', 'Negative Stock Barcode', 'Hardware', 2500.0, -4, 2) --> REASON: Invalid stock quantity (-4): Must be non-negative integer
+----------------------------------------------------------------------------------------
+
+SECTION 2: CERTIFIED PRODUCT INVENTORY VALUATION LEDGER
+ID       Product Name             Category        Price (INR)    Stock    Value (INR) Stock Status
+--------------------------------------------------------------------------------------------------
+PRD101   Wireless Ergonomic Mouse Electronics       1,250.00       45      56,250.00 HEALTHY     
+PRD102   Mechanical Gaming Keyboard Electronics       3,499.00        8      27,992.00 REORDER     
+PRD103   Noise Cancelling Headset Electronics       5,999.00        3      17,997.00 REORDER     
+PRD104   USB-C Fast Charging Hub  Accessories       1,850.00       60     111,000.00 HEALTHY     
+PRD105   27-inch 4K IPS Monitor   Hardware         28,500.00        0           0.00 OUT OF STOCK
+PRD106   Aluminum Laptop Riser    Accessories       1,450.00       22      31,900.00 HEALTHY     
+PRD107   CAT-6 Ethernet Cable 5m  Networking          350.00      110      38,500.00 HEALTHY     
+PRD108   Thunderbolt 4 Dock       Hardware         14,999.00        5      74,995.00 REORDER     
+--------------------------------------------------------------------------------------------------
+Grand Total Warehouse Stock Units : 253 Units
+Grand Total Inventory Asset Value : INR 358,634.00
+
+SECTION 3: CATEGORY-WISE ASSET VALUATION
+Category              Total Units    Valuation (INR)   Asset Share %
+--------------------------------------------------------------------
+Electronics                    56         102,239.00           28.5%
+Accessories                    82         142,900.00           39.8%
+Hardware                        5          74,995.00           20.9%
+Networking                    110          38,500.00           10.7%
+--------------------------------------------------------------------
+
+SECTION 4: REPLENISHMENT PURCHASE REQUISITION
+ID       Product Name              Current  Min Level   Order Qty  Est. Cost (INR) Priority  
+----------------------------------------------------------------------------------------------
+PRD102   Mechanical Gaming Keyboard        8         10          12        41,988.00 HIGH      
+PRD103   Noise Cancelling Headset        3          5          12        71,988.00 HIGH      
+PRD105   27-inch 4K IPS Monitor          0          4          14       399,000.00 CRITICAL  
+PRD108   Thunderbolt 4 Dock              5          5          10       149,990.00 HIGH      
+----------------------------------------------------------------------------------------------
+Total Items Requiring Purchase   : 4
+Total Reorder Capital Required   : INR 662,966.00

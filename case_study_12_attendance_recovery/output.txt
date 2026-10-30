@@ -1,0 +1,29 @@
+﻿==============================================================================
+                  STUDENT ATTENDANCE AUDIT & RECOVERY REPORT                  
+==============================================================================
+Minimum Prescribed Eligibility Threshold: 75.0%
+
+ID       Student Name       Held   Attended  Current %  Status       100% Rec.  90% Rec.   80% Rec.   Bunk Buffer
+------------------------------------------------------------------------------------------------------------
+24NR1A0501 Shukur             60     48        80.00%     ELIGIBLE     0          0          0          4 classes  
+24NR1A0502 Aarav Kumar        60     42        70.00%     CONDONATION  12         21         61         -          
+24NR1A0503 Bhavya Sri         60     52        86.67%     ELIGIBLE     0          0          0          9 classes  
+24NR1A0504 Charan Teja        60     32        53.33%     CRITICAL     52         87         260        -          
+24NR1A0505 Divya Reddy        60     44        73.33%     CONDONATION  4          7          21         -          
+24NR1A0506 Eshwar Rao         60     28        46.67%     CRITICAL     68         114        340        -          
+24NR1A0507 Farhan Ali         60     57        95.00%     ELIGIBLE     0          0          0          16 classes 
+24NR1A0508 Gowri Priya        60     45        75.00%     ELIGIBLE     0          0          0          -          
+------------------------------------------------------------------------------------------------------------
+
+EXECUTIVE SUMMARY:
+Total Students Evaluated  : 8
+Eligible Students (>=75%) : 4 (50.0%)
+Shortage Cases (<75%)     : 4 (50.0%)
+  - Condonation (65%-74%) : 2
+  - Critical Shortage (<65%): 2
+
+ACTIONABLE RECOVERY DIRECTIVES:
+[*] Aarav Kumar (24NR1A0502) at 70.0%: Must attend 12 consecutive classes without absence to reach 75.0%.
+[*] Charan Teja (24NR1A0504) at 53.3%: Must attend 52 consecutive classes without absence to reach 75.0%.
+[*] Divya Reddy (24NR1A0505) at 73.3%: Must attend 4 consecutive classes without absence to reach 75.0%.
+[*] Eshwar Rao (24NR1A0506) at 46.7%: Must attend 68 consecutive classes without absence to reach 75.0%.
